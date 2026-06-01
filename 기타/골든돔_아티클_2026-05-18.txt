@@ -1,0 +1,155 @@
+제목: 골든돔이 바꾸는 미국 방산 지형도 — 기존 프라임 vs 네오 프라임, 그리고 로켓랩
+
+[표지]
+
+트럼프가 $185B(약 256조 원)짜리 미사일 방어망을 공식화했습니다.
+이름은 골든돔(Golden Dome).
+그런데 이 숫자보다 더 중요한 게 있습니다.
+"누가 짓느냐"의 구조가 이전 방산과 완전히 다르다는 것입니다.
+
+---
+
+1. 골든돔이란 무엇인가
+
+골든돔은 우주 기반 탐지·추적·요격을 하나의 통합 체계로 묶는 프로젝트입니다.
+기존 MD(미사일 방어, Missile Defense) 시스템이 지상과 해상 중심이었다면,
+골든돔은 궤도에서 위협을 탐지하고, 우주에서 요격하는 개념까지 포함합니다.
+
+CBO(미국 의회 예산국, Congressional Budget Office)는 20년간 실제 비용을
+최대 $1.2T(약 1,656조 원)로 추산했습니다.
+$185B은 시작점입니다.
+
+[중간삽입1]
+
+---
+
+2. 기존 프라임(Old Prime)의 구조
+
+RTX(레이시온 테크놀로지스, Raytheon Technologies), LMT(록히드 마틴, Lockheed Martin),
+NOC(노스럽 그루먼, Northrop Grumman), BA(보잉, Boeing) — 이들이 Old Prime입니다.
+
+이들이 지금까지 방산을 지배한 방식은 FAR(연방 조달 규정, Federal Acquisition Regulation) 기반의
+cost-plus(원가 가산) 계약입니다.
+원가에 일정 마진을 얹어주는 구조라 리스크가 낮고, 수익이 안정적입니다.
+대신 효율 인센티브가 없고, 납기가 늘어지는 경향이 있습니다.
+
+골든돔에서 RTX는 SBI(우주 기반 요격체, Space-Based Interceptor) $3.2B 위상 연구에 참여합니다.
+LMT는 우주 추적 레이어를 맡고 있습니다.
+Old Prime의 역할이 사라지는 게 아닙니다.
+다만 이번엔 다른 플레이어들과 함께 테이블에 앉아야 합니다.
+
+[중간삽입2]
+
+---
+
+3. 네오 프라임(Neo Prime)의 등장
+
+OTA(기타 거래 권한, Other Transaction Authority) 계약이 핵심입니다.
+FAR의 복잡한 규정을 우회해 민간 기업과 빠르게 계약할 수 있는 방식입니다.
+
+골든돔 1단계에서 OTA 계약을 받은 12개 기업 중에는
+Anduril, Palantir, SpaceX처럼 전통 방산이 아닌 곳이 대거 포함됐습니다.
+
+Anduril은 HASTE(극초음속 공대지 추적 실험, Hypersonic Air-breathing Strike Turbine Engine) 계약을 받았고,
+Lattice OS(격자 운영체제)로 센서 융합과 AI 의사결정을 통합합니다.
+
+Palantir는 데이터 분석과 지휘통제 소프트웨어로 들어옵니다.
+SpaceX는 Starshield(스타쉴드, 군사용 스타링크 파생)와 발사 인프라로 연결됩니다.
+
+이들의 공통점은 하나입니다.
+소프트웨어와 속도. 하드웨어를 직접 만드는 대신, 플랫폼을 장악합니다.
+
+[중간삽입3]
+
+---
+
+4. 파이가 나뉘는 게 아니라 커지는 구조
+
+"Old Prime가 밀려나는 것 아닌가"라는 질문이 자연스럽게 나옵니다.
+데이터를 보면 그렇지 않습니다.
+
+골든돔 이전에도 RTX는 PAC-3(패트리어트 고급 능력-3, Patriot Advanced Capability-3)와
+SM-3(스탠다드 미사일-3, Standard Missile-3) 물량으로 수십 년간 매출이 발생하는 구조입니다.
+골든돔이 추가되면 기존 지상·해상 방어망은 그대로 유지하면서 우주 레이어가 얹히는 것입니다.
+
+파이가 하나인데 나누는 게 아니라, 레이어가 하나 더 생기는 것입니다.
+Old Prime는 기존 레이어를 지키고, Neo Prime는 새 레이어에서 성장합니다.
+이 둘은 경쟁이 아니라 보완 관계에 가깝습니다.
+
+다만 중장기적으로 예산 배분의 무게중심이 소프트웨어와 우주 쪽으로 이동하면,
+Old Prime의 매출 성장률은 둔화되고 Neo Prime의 성장률은 가팔라질 수 있습니다.
+
+[중간삽입4]
+
+---
+
+5. 로켓랩은 어디에 있나
+
+RKLB(로켓랩, Rocket Lab)는 골든돔에서 독특한 위치에 있습니다.
+
+RTX 팀(SBI 위상 연구)과 Anduril 팀(HASTE 계약) 양쪽에 부품 공급사로 연결됩니다.
+Electron(일렉트론) 로켓은 소형 위성과 시험체 발사를 맡고,
+Photon(포톤) 위성 버스는 우주 탐지·추적 레이어 플랫폼으로 활용됩니다.
+
+LEO(저궤도, Low Earth Orbit) 감시 위성 체계가 골든돔의 눈이라면,
+RKLB는 그 눈을 궤도에 올리는 수단 중 하나입니다.
+
+그리고 Neutron(뉴트론) 중형 로켓이 추가되면 발사 가능한 위성 규모가 크게 늘어납니다.
+골든돔 전체 예산이 커질수록 RKLB의 발사 수요도 따라 올라갈 수 있는 구조입니다.
+
+[중간삽입5]
+
+---
+
+6. 지금 봐야 할 것
+
+골든돔은 선언입니다. 아직 예산 전액이 확정된 건 아닙니다.
+의회 승인, 예산 배분, OTA 계약 세부 조건 — 이게 다 나와야 숫자가 현실이 됩니다.
+
+그 과정에서 주목할 지점은 세 가지입니다.
+
+첫째, OTA 계약 2단계. 1단계 12개사 중 누가 실제 개발 계약으로 넘어가는지.
+둘째, SBI $3.2B 위상 연구 결과. RTX가 주도하지만 우주 요격 실현 가능성 검증이 핵심.
+셋째, 발사 수요. RKLB와 SpaceX가 어느 비중을 가져가는지.
+
+방산의 지형이 바뀌고 있습니다.
+어떤 기업이 새 지형의 어디에 서 있는지를 먼저 파악하는 사람이 유리합니다.
+
+이 중에서 주목하고 있는 기업이 있으신가요?
+댓글로 알려주시면 같이 생각해보겠습니다.
+
+#골든돔 #GoldenDome #RKLB #로켓랩 #방산 #미국주식 #투자공부 #AndurilIndustries #Palantir #OldPrime #NeoPrime
+
+---
+
+📎 출처
+
+1. DefenseScoop — "CBO estimates Golden Dome-like missile shield could cost $1.2T over 2 decades" (2026.05.12)
+   https://defensescoop.com/2026/05/12/golden-dome-cbo-cost-estimate-missile-defense-architecture/
+
+2. Defense One — "Golden Dome plan would cost $1.2 trillion, CBO finds" (2026.05)
+   https://www.defenseone.com/defense-systems/2026/05/golden-dome-cost-trillion-cbo/413485/
+
+3. Breaking Defense — "Golden Dome could cost up to $1.2 trillion over 20 years, CBO estimates" (2026.05)
+   https://breakingdefense.com/2026/05/golden-dome-could-cost-up-to-1-2-trillion-over-20-years-cbo-estimates/
+
+4. DefenseScoop — "Space Force names 12 companies to develop Golden Dome's space-based interceptors" (2026.04.24)
+   https://defensescoop.com/2026/04/24/golden-dome-space-based-interceptor-missile-defense-contractors/
+
+5. Via Satellite — "Space Force Awards $3.2 Billion to 12 Companies for Space-Based Interceptor Work" (2026.04.26)
+   https://www.satellitetoday.com/government-military/2026/04/26/space-force-awards-3-2-billion-to-12-companies-for-space-based-interceptor-work/
+
+6. Fortune — "SpaceX, Anduril among companies to win Golden Dome contracts" (2026.04.25)
+   https://fortune.com/2026/04/25/spacex-anduril-lockheed-raytheon-northrop-golden-dome-interceptor-contracts/
+
+7. ClearanceJobs — "Golden Dome Is 'No Longer Theoretical,' Top General Says as $3.2B in Space Contracts Land" (2026.04.30)
+   https://news.clearancejobs.com/2026/04/30/golden-dome-is-no-longer-theoretical-top-general-says-as-3-2b-in-space-contracts-land/
+
+8. SpaceNews — "Rocket Lab joins Raytheon on space interceptor program for Golden Dome" (2026.05)
+   https://spacenews.com/rocket-lab-joins-raytheon-on-space-interceptor-program-for-golden-dome/
+
+9. Air & Space Forces Magazine — "Space Force Reveals $3.2B in Space-Based Interceptor Awards for Golden Dome"
+   https://www.airandspaceforces.com/space-force-reveals-space-based-interceptor-awards-golden-dome/
+
+10. Wikipedia — "Golden Dome (missile defense system)"
+    https://en.wikipedia.org/wiki/Golden_Dome_(missile_defense_system)
