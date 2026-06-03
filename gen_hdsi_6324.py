@@ -102,7 +102,7 @@ draw.text((658, y + 18), "기대 선반영 구간  —  실적 확인 후 판단
 
 # ── 푸터 ──
 draw.line([(32, H - 44), (W - 32, H - 44)], fill=DARK_GRAY, width=1)
-draw.text((32, H - 30), "2026.06.03  |  HDSI IR · ainvest · alphabiz  |  개인 공부 기록, 투자 추천 아님", font=font(16), fill=GRAY)
+draw.text((32, H - 30), "2026.06.03  |  HDSI IR · ainvest · alphabiz", font=font(16), fill=GRAY)
 
 out = os.path.join(OUT_DIR, "2026-06-03_하모닉드라이브_6324.png")
 img.save(out)
