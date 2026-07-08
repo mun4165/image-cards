@@ -2,14 +2,14 @@ from PIL import Image, ImageDraw, ImageFont
 import os
 
 FONT_PATH = "/System/Library/Fonts/AppleSDGothicNeo.ttc"
-OUT_DIR = "/Users/munjinhyeok/Desktop/Think-Tank/04_output/이미지사용/2026-07-05"
+OUT_DIR = "/Users/munjinhyeok/Desktop/Think-Tank/04_output/이미지사용/2026-07-07"
 os.makedirs(OUT_DIR, exist_ok=True)
 
 W, H = 1280, 720
 BG=(13,17,23); GRID=(255,255,255,12); WHITE=(255,255,255); GRAY=(140,150,165)
 DARK_GRAY=(60,70,82); AMBER=(245,158,11); TEAL=(20,184,166); BLUE=(59,130,246)
 CYAN=(6,182,212); GREEN=(52,211,153); ORANGE=(249,115,22); RED=(248,113,113)
-ACCENT = CYAN
+ACCENT = BLUE
 
 def font(size, index=0): return ImageFont.truetype(FONT_PATH, size, index=index)
 def bold(size): return ImageFont.truetype(FONT_PATH, size, index=4)
@@ -19,8 +19,8 @@ for x in range(0, W, 80): draw.line([(x,0),(x,H)], fill=GRID, width=1)
 for y in range(0, H, 80): draw.line([(0,y),(W,y)], fill=GRID, width=1)
 draw.rectangle([0,0,W,4], fill=ACCENT); draw.rectangle([0,0,4,H], fill=ACCENT)
 
-draw.text((32,24), "앤트로픽 호주 15조 데이터센터", font=bold(40), fill=ACCENT)
-draw.text((32,84), "\"주인공이 IREN\" 소문, 팩트체크", font=bold(24), fill=GRAY)
+draw.text((32,24), "TSMC 코워스 병목, Amkor·ASE로 번진다", font=bold(32), fill=ACCENT)
+draw.text((32,80), "진짜 체크포인트는 따로 있다", font=bold(24), fill=GRAY)
 draw.line([(32,128),(W-32,128)], fill=DARK_GRAY, width=1)
 
 def band(y, h, color, fillbg, label, headline, d1, d2):
@@ -33,21 +33,21 @@ def band(y, h, color, fillbg, label, headline, d1, d2):
     draw.text((268, y+92), d2, font=font(17), fill=GRAY)
 
 by = 146; bh = 148; step = 164
-band(by, bh, GREEN, (10,32,22), "확인된 사실",
-     "1.4GW · 최대 150억 달러 투자 준비",
-     "기밀 입찰서류 기준 — 내년 말까지 1GW 온라인 목표",
-     "최종투자결정(FID) 4~6주 내 · 4~5개 계약 분할 발주 가능성")
-band(by+step, bh, AMBER, (40,28,10), "확인 안 된 것",
-     "파트너가 IREN·SharonAI라는 근거 없음",
-     "IREN 확인 고객 = Microsoft (번디 800MW 캠퍼스)",
-     "SharonAI 확인 상대 = NVIDIA (72MW) · 근거는 추측성 트윗 하나")
-band(by+step*2, bh, CYAN, (8,28,34), "구분할 것",
-     "4월 MOU와는 별개의 새 보도",
-     "MOU는 법적 구속력 없음 · 금액·용량 언급 자체 없었음",
-     "지금 도는 숫자는 2026-07-05 기밀 입찰서류발 보도")
+band(by, bh, BLUE, (10,20,34), "TSMC",
+     "코워스 웨이퍼 수요 2024년 37만장 → 2026년 100만장",
+     "TrendForce: 수급 갭 20% → 연말 10%로 완화 전망(6/15)",
+     "엔비디아 비중 약 60%, 26~27년 증설분 절반 예약")
+band(by+step, bh, AMBER, (40,28,10), "Amkor·ASE",
+     "TSMC, 코워스 서브스텝 일부를 OSAT로 위탁",
+     "Amkor 2026 캐펙스 최대 3조원, 65~70% 애리조나행",
+     "ASE는 올해 신규 팹 6곳 착공")
+band(by+step*2, bh, CYAN, (8,28,34), "다음 레이어",
+     "유리기판(Corning)·하이브리드본딩(Kulicke & Soffa) 대기",
+     "볼륨 램프는 2027~2028년",
+     "리스크: 엔비디아 집중 60%는 밸류체인 전체의 리스크")
 
 draw.line([(32,H-30),(W-32,H-30)], fill=DARK_GRAY, width=1)
-draw.text((32,H-22), "2026.07.05  |  Anthropic · IREN", font=font(15), fill=GRAY)
+draw.text((32,H-22), "2026.07.07  |  AMKR  Amkor Technology", font=font(15), fill=GRAY)
 
-out = os.path.join(OUT_DIR, "2026-07-05_앤트로픽호주데이터센터_팩트체크.png")
+out = os.path.join(OUT_DIR, "2026-07-07_TSMC코워스아웃소싱.png")
 img.save(out); print("Saved:", out)

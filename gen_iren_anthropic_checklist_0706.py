@@ -2,7 +2,7 @@ from PIL import Image, ImageDraw, ImageFont
 import os
 
 FONT_PATH = "/System/Library/Fonts/AppleSDGothicNeo.ttc"
-OUT_DIR = "/Users/munjinhyeok/Desktop/Think-Tank/04_output/이미지사용/2026-07-05"
+OUT_DIR = "/Users/munjinhyeok/Desktop/Think-Tank/04_output/이미지사용/2026-07-06"
 os.makedirs(OUT_DIR, exist_ok=True)
 
 W, H = 1280, 720
@@ -19,8 +19,8 @@ for x in range(0, W, 80): draw.line([(x,0),(x,H)], fill=GRID, width=1)
 for y in range(0, H, 80): draw.line([(0,y),(W,y)], fill=GRID, width=1)
 draw.rectangle([0,0,W,4], fill=ACCENT); draw.rectangle([0,0,4,H], fill=ACCENT)
 
-draw.text((32,24), "앤트로픽 호주 15조 데이터센터", font=bold(40), fill=ACCENT)
-draw.text((32,84), "\"주인공이 IREN\" 소문, 팩트체크", font=bold(24), fill=GRAY)
+draw.text((32,24), "IREN, 앤트로픽 데이터센터 조각을 가져갈 수 있을까", font=bold(36), fill=ACCENT)
+draw.text((32,80), "11개 조건 체크리스트 대조", font=bold(24), fill=GRAY)
 draw.line([(32,128),(W-32,128)], fill=DARK_GRAY, width=1)
 
 def band(y, h, color, fillbg, label, headline, d1, d2):
@@ -33,21 +33,21 @@ def band(y, h, color, fillbg, label, headline, d1, d2):
     draw.text((268, y+92), d2, font=font(17), fill=GRAY)
 
 by = 146; bh = 148; step = 164
-band(by, bh, GREEN, (10,32,22), "확인된 사실",
-     "1.4GW · 최대 150억 달러 투자 준비",
-     "기밀 입찰서류 기준 — 내년 말까지 1GW 온라인 목표",
-     "최종투자결정(FID) 4~6주 내 · 4~5개 계약 분할 발주 가능성")
-band(by+step, bh, AMBER, (40,28,10), "확인 안 된 것",
-     "파트너가 IREN·SharonAI라는 근거 없음",
-     "IREN 확인 고객 = Microsoft (번디 800MW 캠퍼스)",
-     "SharonAI 확인 상대 = NVIDIA (72MW) · 근거는 추측성 트윗 하나")
-band(by+step*2, bh, CYAN, (8,28,34), "구분할 것",
-     "4월 MOU와는 별개의 새 보도",
-     "MOU는 법적 구속력 없음 · 금액·용량 언급 자체 없었음",
-     "지금 도는 숫자는 2026-07-05 기밀 입찰서류발 보도")
+band(by, bh, GREEN, (10,32,22), "체크리스트 부합",
+     "재무·부지·전력·해저케이블 — 8개 조건 매치",
+     "92억 달러 구조화 자금조달 · 800MW 번디 캠퍼스",
+     "싱가포르·한국·일본행 APAC 해저광케이블 — 메트로 사이트엔 없는 것")
+band(by+step, bh, AMBER, (40,28,10), "넘어야 할 벽",
+     "가동 개시 2028년 · 완공 실적 아직 없음",
+     "앤트로픽 비투자등급 — 임대인이 자금조달 리스크 부담",
+     "CDC(Infratil 후원)가 500MW 유력 후보로 거론됨")
+band(by+step*2, bh, CYAN, (8,28,34), "현실적 결론",
+     "노릴 몫은 500MW 아닌 100~200MW 조각",
+     "216억 달러는 원본 보도 미확인 수치 · 계약 미체결",
+     "FID(최종투자결정)까지 최소 6주 남음")
 
 draw.line([(32,H-30),(W-32,H-30)], fill=DARK_GRAY, width=1)
-draw.text((32,H-22), "2026.07.05  |  Anthropic · IREN", font=font(15), fill=GRAY)
+draw.text((32,H-22), "2026.07.06  |  IREN  Iris Energy", font=font(15), fill=GRAY)
 
-out = os.path.join(OUT_DIR, "2026-07-05_앤트로픽호주데이터센터_팩트체크.png")
+out = os.path.join(OUT_DIR, "2026-07-06_IREN_앤트로픽체크리스트.png")
 img.save(out); print("Saved:", out)

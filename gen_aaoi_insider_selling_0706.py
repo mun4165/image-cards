@@ -2,7 +2,7 @@ from PIL import Image, ImageDraw, ImageFont
 import os
 
 FONT_PATH = "/System/Library/Fonts/AppleSDGothicNeo.ttc"
-OUT_DIR = "/Users/munjinhyeok/Desktop/Think-Tank/04_output/이미지사용/2026-07-05"
+OUT_DIR = "/Users/munjinhyeok/Desktop/Think-Tank/04_output/이미지사용/2026-07-06"
 os.makedirs(OUT_DIR, exist_ok=True)
 
 W, H = 1280, 720
@@ -19,8 +19,8 @@ for x in range(0, W, 80): draw.line([(x,0),(x,H)], fill=GRID, width=1)
 for y in range(0, H, 80): draw.line([(0,y),(W,y)], fill=GRID, width=1)
 draw.rectangle([0,0,W,4], fill=ACCENT); draw.rectangle([0,0,4,H], fill=ACCENT)
 
-draw.text((32,24), "앤트로픽 호주 15조 데이터센터", font=bold(40), fill=ACCENT)
-draw.text((32,84), "\"주인공이 IREN\" 소문, 팩트체크", font=bold(24), fill=GRAY)
+draw.text((32,24), "AAOI 내부자매도, 고점에서 던졌다", font=bold(36), fill=ACCENT)
+draw.text((32,80), "CEO·이사·임원 2명 Form 4 전량 대조", font=bold(24), fill=GRAY)
 draw.line([(32,128),(W-32,128)], fill=DARK_GRAY, width=1)
 
 def band(y, h, color, fillbg, label, headline, d1, d2):
@@ -32,22 +32,22 @@ def band(y, h, color, fillbg, label, headline, d1, d2):
     draw.text((268, y+62), d1, font=font(19), fill=color)
     draw.text((268, y+92), d2, font=font(17), fill=GRAY)
 
-by = 146; bh = 148; step = 164
-band(by, bh, GREEN, (10,32,22), "확인된 사실",
-     "1.4GW · 최대 150억 달러 투자 준비",
-     "기밀 입찰서류 기준 — 내년 말까지 1GW 온라인 목표",
-     "최종투자결정(FID) 4~6주 내 · 4~5개 계약 분할 발주 가능성")
-band(by+step, bh, AMBER, (40,28,10), "확인 안 된 것",
-     "파트너가 IREN·SharonAI라는 근거 없음",
-     "IREN 확인 고객 = Microsoft (번디 800MW 캠퍼스)",
-     "SharonAI 확인 상대 = NVIDIA (72MW) · 근거는 추측성 트윗 하나")
-band(by+step*2, bh, CYAN, (8,28,34), "구분할 것",
-     "4월 MOU와는 별개의 새 보도",
-     "MOU는 법적 구속력 없음 · 금액·용량 언급 자체 없었음",
-     "지금 도는 숫자는 2026-07-05 기밀 입찰서류발 보도")
+by = 140; bh = 165; step = 182
+band(by, bh, RED, (40,16,16), "매도 팩트",
+     "5명이 5/19~6/18 총 20만4,904주 매도",
+     "CEO 5.8만주 · 이사 5.66만주 · 임원 2명 8.6만주",
+     "매도가 $166.53~$205.39, 현재가 $120.95보다 27~41% 위")
+band(by+step, bh, AMBER, (40,28,10), "완화 요인",
+     "대부분 Rule 10b5-1 사전계획 매도",
+     "CEO·임원 2명은 매도 후에도 수십만~수백만주 잔여",
+     "계획 자체는 3~6월 사전 채택, 정보이용 시비 아님")
+band(by+step*2, bh, CYAN, (8,28,34), "진짜 경계 지점",
+     "이사 DeLaney, 본인 보유의 48% 매도",
+     "5.66만주 팔고 6.2만주만 남음 — 비중 최대 매도",
+     "매도 클러스터가 7/2 섹터 리셋보다 몇 주 앞섰다")
 
 draw.line([(32,H-30),(W-32,H-30)], fill=DARK_GRAY, width=1)
-draw.text((32,H-22), "2026.07.05  |  Anthropic · IREN", font=font(15), fill=GRAY)
+draw.text((32,H-22), "2026.07.06  |  AAOI  Applied Optoelectronics", font=font(15), fill=GRAY)
 
-out = os.path.join(OUT_DIR, "2026-07-05_앤트로픽호주데이터센터_팩트체크.png")
+out = os.path.join(OUT_DIR, "2026-07-06_AAOI_내부자매도_Form4대조.png")
 img.save(out); print("Saved:", out)
